@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/textView_speed_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/Speed"
+        android:textColor="#000000"
+        android:textSize="60sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_Network_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/NetworkDisConnected"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView_Login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/LoginFail"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView_Radar_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/RadarNotValid"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_GPS_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/LocationStop"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView_current_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_GPS_status"
+        android:layout_below="@id/textView_GPS_status"
+           android:textColor="#000000"
+        android:text="@string/Empty" />
+
+    <TextView
+        android:id="@+id/textView_Radar_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+           android:textColor="#000000"
+        android:text="@string/Empty" />
+
+    <TextView
+        android:id="@+id/textView_AlarmPoint_Info0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Empty"
+           android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView_Radar_level"
+        android:text="@string/Empty"
+           android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_AlarmPoint_Info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_AlarmPoint_Info0"
+        android:layout_below="@+id/textView_AlarmPoint_Info0"
+        android:text="@string/Empty"
+           android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_Radar_level"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/button_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_Radar_level"
+            android:layout_alignLeft="@+id/textView_current_position"
+            android:text="@string/WeatherInfo" />
+
+        <Button
+            android:id="@+id/button_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_test"
+            android:layout_alignLeft="@+id/button_test"
+            android:text="@string/CurrentPosition" />
+
+        <Button
+            android:id="@+id/button_roadstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_position"
+            android:layout_alignLeft="@+id/button_position"
+            android:text="@string/RoadStatus" />
+
+        <Button
+            android:id="@+id/button_simulate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Simulate" />
+
+        <Button
+            android:id="@+id/button_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/button_simulate"
+            android:text="@string/BaiduMap" />
+
+        <Button
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/button_map"
+            android:text="a1111" />
+
+        <Button
+            android:id="@+id/a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/a"
+            android:text="a222" />
+        
+ 
+    </LinearLayout>
+
+</RelativeLayout>

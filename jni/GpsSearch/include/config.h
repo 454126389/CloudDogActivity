@@ -1,0 +1,11 @@
+#ifndef __CONFIG_H__
+#define __CONFIG_H__
+
+#define _CUSTOMMAIN_EXTRA_POINT_
+#define _CUSTOMMAIN_DB_UPDATE_
+#define _CUSTOMMAIN_UPDATE_DB_PASS_
+#define _CUSTOMMAIN_BASE_DB_PASS_
+
+#define _SP_JNI_DEBUG_VERSION_
+
+#endif
